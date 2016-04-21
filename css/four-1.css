@@ -1,0 +1,261 @@
+/* 
+* @Author: BAI
+* @Date:   2016-04-19 16:34:15
+* @Last modified by:   BAI
+* @Last Modified time: 2016-04-20 09:49:45
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+.clear{
+    clear:both;
+    }
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+html,body{
+    height: 100%;
+    font-family:'微软雅黑';
+}
+header{
+    width: 100%;
+    height: 30px;
+    background: #222;
+}
+#top{
+    margin: 0 auto;
+    width: 1000px;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+    line-height: 30px;
+}
+#top a{
+    color: #fff;
+    padding-left:10px;
+    font-weight: bold;
+}
+#top a:hover{
+    color: #00bcd4;
+}
+nav{
+    width: 100%;
+    height: 90px;
+    background:#00bcd4;
+}
+#nav_inner{
+    width: 1000px;
+    margin: 0 auto;
+    background: #00bcd4;
+}
+#logo{
+    float: left;
+    padding-right: 20px;
+}
+#nav_r li{
+    float: left;
+    line-height: 90px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+#nav_r .now{
+    background: #028ea1;
+}
+#nav_r li:hover{
+    background: #52d2e3;
+}#nav_r .now:hover{
+    background: #028ea1;
+}
+#nav_r li a{
+    padding: 0 30px;
+    display: block;
+    color: #fff;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background: #222;
+    position: fixed;
+    bottom: 0;
+}
+#footer_inner{
+    width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+#footer_inner p{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 12px;
+}
+#footer_inner a{
+    color: #fff;
+}
+#footer_inner a:hover{
+    color: #00bcd4;
+}
+#main{
+    padding: 40px 0;
+    width: 1000px;
+    margin:0 auto;
+}
+aside{
+    width:80px; 
+    float: left;
+}
+aside a{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    color: #bbb;
+    margin: 10px 0;
+}
+.choose{
+    color: #00bcd4;
+    font-weight: bold;
+    border-bottom: 1px #00bcd4 solid;
+}
+section{
+    width: 800px;
+    float: right;
+}
+#search{
+    width: 800px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#search label{
+    text-align: left;
+    display: inline-block;
+}
+#search input{
+    width: 188px;
+    height: 38px;
+    padding-left: 10px;
+    border: 1px #d7d7d7 solid;
+    font-size: 14px;
+    line-height: 40px;
+    color: #333;
+    outline: none;
+    vertical-align: middle;
+}
+#search p{
+    display: inline-block;
+    font-size: 16px;
+    color: #555;
+    line-height: 40px;
+}
+#last{
+    margin-left: 20px;
+    display: inline-block;
+}
+#last input{
+    padding: 0;
+    text-align: center;
+    width: 118px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 38px;
+    margin: 10px;
+}
+#last #go{
+    border: 1px #57c88a solid;
+    background: #57c88a;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+#last #out{
+    border: 1px #32ade6 solid;
+    background: #32ade6;
+    -webkit-transition:0.5s ;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+#last #go:hover{
+    background: #fff;
+    color: #57c88a;
+    border-color: #57c88a;
+}
+#last #out:hover{
+    background: #fff;
+    color: #32ade6;
+    border-color: #32ade6;
+}
+#biaoge{
+    padding-top: 20px;
+    border-top: 1px #00bcd4 solid;
+    width: 800px;
+}
+#list{
+    width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+#list th{
+    height: 40px;
+    background: #ccc;
+    border: none;
+    font-size: 12px;
+    color: #666;
+    line-height: 40px;
+}
+#list td{
+    height: 40px;
+    border: none;
+    font-size: 12px;
+    color: #666;
+    line-height: 12px;
+}
+#page{
+    width: 800px;
+    margin-top: 10px;
+}
+#page p{
+    width: auto;
+    display: inline-block;
+    color: #ccc;
+    font-size: 10px;
+    line-height: 40px;
+    float: left;
+}
+.M-box3{
+    float: right;
+}
+#refresh{
+    float: right;
+    margin:0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    outline: none;
+    color: #bdbdbd;
+    font-size: 14px;
+    cursor: pointer;
+}
+#refresh:hover{
+    color:#fff;
+    background: #00bcd4;
+}
+#refresh:active{
+    background: #00bca0;
+    color:#fff;
+    cursor: default;
+};

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="Design by Bai" />
+    <title>加加流量平台-首页</title>
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/echarts.min.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <p>欢迎！<span>某某公司名称</span><a href="#">退出</a></p>
+        </div>
+    </header>
+    <nav>
+    <div id="nav_inner">
+        <div id="logo"><a href="index.html"><img src="images/logo.png" height="90" width="180" a /></a></div>
+        <ul id="nav_r">
+            <li class="now"><a href="index.html">首页</a></li>
+            <li><a href="order.html">订单查询</a></li>
+            <li><a href="service1.html">业务统计</a></li>
+            <li><a href="personal-1.html">个人中心</a></li>
+            <li><a href="#">充值中心</a></li>
+            <li><a href="#">活动管理</a></li>
+        </ul>
+    </div>
+    </nav>
+    <section>
+        <div id="main_top">
+            <div id="top_left"><p>话费可用余额（元）：</p><span class='money'>100,000</span><span>.00</span></div>
+            <div id="top_right"><p>流量可用余额（元）：</p><span class='money'>100,000</span><span>.00</span></div>
+        </div>
+        <div id="main_mid">
+            <div id="mid_left">
+                <div id="biaoti"><h2>消费金额</h2></div>
+                <div id="box_1">
+                    <p>本月流量消费金额（元）</p>
+                    <h3>100,000.00</h3>
+                </div>
+                <div id="box_2">
+                    <p>本月话费消费金额（元）</p>
+                    <h3>100,000.00</h3>
+                </div>
+            </div>
+            <div id="mid_right">
+                <div id="biaoti"><h2>订单数量</h2></div>
+                <div id="box_1">
+                    <p>本月流量订单数量（个）</p>
+                    <h3>100,000</h3>
+                </div>
+                <div id="box_2">
+                    <p>本月话费订单数量（个）</p>
+                    <h3>100,000</h3>
+                </div>
+            </div>
+        </div>
+        <div id="main_bot">
+            <div id="bot_left">
+                <div id="biaoti"><h2>每月消费金额走势图</h2></div>
+                    <div class="bot_pic">
+                        <div id="pic_left" style="width:450px;height:280px;font-size:10px;"></div>
+                    </div>
+            </div>
+            <div id="bot_right">
+                <div id="biaoti"><h2>每月订单走势图</h2></div>
+                    <div class="bot_pic">
+                        <div id="pic_right" style="width:450px;height:280px;font-size:10px;"></div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer_inner">
+            <p><a href="#">合作伙伴</a></p>丨<p><a href="#">联系我们</a></p>
+            <p>京ICP备13051795号-2加加流量  版权所有</p>
+        </div>
+    </footer>
+<script type="text/javascript">
+var myChart = echarts.init(document.getElementById('pic_left'));
+option = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['最高投入','最低投入']
+    },
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data: ['15-11','15-12','16-01','16-02','16-03']
+    },
+    yAxis: {
+        type: 'value',
+        axisLabel: {
+            formatter: '{value} 元'
+        }
+    },
+    series: [
+        {
+            name:'流量投入（元）',
+            type:'line',
+            data:[263, 263, 789, 1052, 1315,],
+            markPoint: {
+                data: [
+                    {type: 'max', name: '最大值'},
+                    {type: 'min', name: '最小值'}
+                ]
+            },
+            markLine: {
+                data: [
+                    {type: 'average', name: '平均值'}
+                ]
+            }
+        },        
+        {
+            name:'话费投入（元）',
+            type:'line',
+            data:[128, 203, 489, 852, 715,],
+            markPoint: {
+                data: [
+                    {type: 'max', name: '最大值'},
+                    {type: 'min', name: '最小值'}
+                ]
+            },
+            markLine: {
+                data: [
+                    {type: 'average', name: '平均值'}
+                ]
+            }
+        },
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+var myChart = echarts.init(document.getElementById('pic_right'));
+option = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['最高投入','最低投入']
+    },
+    xAxis:  {
+        type: 'category',
+        boundaryGap: false,
+        data: ['15-11','15-12','16-01','16-02','16-03']
+    },
+    yAxis: {
+        type: 'value',
+        axisLabel: {
+            formatter: '{value} 元'
+        }
+    },
+    series: [
+        {
+            name:'流量数量（个）',
+            type:'line',
+            data:[363, 283, 489, 852, 915,],
+            markPoint: {
+                data: [
+                    {type: 'max', name: '最大值'},
+                    {type: 'min', name: '最小值'}
+                ]
+            },
+            markLine: {
+                data: [
+                    {type: 'average', name: '平均值'}
+                ]
+            }
+        },        
+        {
+            name:'话费数量（个）',
+            type:'line',
+            data:[463, 163, 389, 652, 815,],
+            markPoint: {
+                data: [
+                    {type: 'max', name: '最大值'},
+                    {type: 'min', name: '最小值'}
+                ]
+            },
+            markLine: {
+                data: [
+                    {type: 'average', name: '平均值'}
+                ]
+            }
+        },
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart.setOption(option);
+</script>
+</body>
+</html>
