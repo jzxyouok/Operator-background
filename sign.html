@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="Design by Bai" />
+    <title>加加流量平台-登录</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/zhuce.css" />
+</head>
+<body>
+ <header><img src="images/logo.png" alt="" /></header>
+ <section>
+    <div id="top"><div><a href="login.html">登录</a></div><div><a href="sign.html" class="underline">注册</a></div></div>
+    <div id="search">
+    <lable><div><img src="images/person.png" height="16" width="16"/></div><input type="tel" placeholder='请输入手机号码' maxlength="11"></lable>
+    <p>请输入有效手机号码</p>
+    <label><div><img src="images/password.png" height="16" width="16"/></div><input type="text"placeholder='请输入密码'></label>
+    <p>8-20位，可以由字母、数字、特殊字符组成</p>
+    <label><div style="width:16px;height:16px;"></div><input type="text"placeholder='请再次输入'></label>
+    <label><div><img src="images/massage.png" height="16" width="16"/></div><input type="text" placeholder='请输入验证码' id="yanzheng" maxlength="6"><input id="out" type="button" value="发送验证码" onclick="sendMessage()" /></label>
+    <p>验证码错误</p>
+    </div>
+    <div id="last"><input type="button" value="注册" id="go" /></div>
+ </section>
+<footer>
+ <div id="footer_inner">
+     <p><a href="#">合作伙伴</a></p>丨<p><a href="#">联系我们</a></p>
+     <p>京ICP备13051795号-2加加流量  版权所有</p>
+ </div>
+</footer>   
+</body>
+</html>

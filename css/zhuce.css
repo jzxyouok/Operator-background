@@ -1,0 +1,143 @@
+/* 
+* @Author: BAI
+* @Date:   2016-04-21 13:15:32
+* @Last modified by:   BAI
+* @Last Modified time: 2016-04-21 16:12:22
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+.clear{
+    clear:both;
+    }
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:'微软雅黑';
+    background: url(../images/bj.png);
+    background-size: cover;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background: #222;
+    position: fixed;
+    bottom: 0;
+}
+#footer_inner{
+    width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+#footer_inner p{
+    display: inline-block;
+    line-height: 30px;
+    font-size: 12px;
+}
+#footer_inner a{
+    color: #fff;
+}
+#footer_inner a:hover{
+    color: #00bcd4;
+}
+header{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    padding:30px 80px;
+    border:1px #fff solid;
+}
+#top{
+    padding-bottom: 20px;
+}
+#top div{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+#top a{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #aaa;
+    padding:0 10px;
+}
+#top .underline{
+    border-bottom:2px #fff solid;
+    color: #fff;
+}
+#search div{
+    display: inline-block;
+}
+#search label{
+    display: block;
+    vertical-align: middle;
+}
+#search input{
+    vertical-align: middle;
+    width: 238px;
+    height: 38px;
+    padding-left: 10px;
+    border: 1px #fff solid;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    outline: none;
+    margin: 10px 0 10px 10px;
+    background-color:rgba(0,0,0,0);
+}
+#search #yanzheng{
+    width: 92px;
+    margin-right: 6px;
+}
+#search #out{
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    width: 138px;
+    border: 1px #fff solid;
+}
+#search p{
+    color: #ff9797;
+    font-size: 14px;
+    padding-left: 26px;
+    line-height: 20px;
+}
+#go{
+    margin:20px 0 0 26px;
+    text-align: center;
+    width: 238px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 38px;
+    outline: none;
+    border: 1px #00bcd4 solid;
+    background: #00bcd4;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}

@@ -2,20 +2,21 @@
 * @Author: BAI
 * @Date:   2016-04-19 11:24:35
 * @Last modified by:   BAI
-* @Last Modified time: 2016-04-20 16:23:04
+* @Last Modified time: 2016-04-21 16:08:20
 */
 $(document).ready(function() {
-    //导航栏交互
-    $('#nav_r li').click(function(){
-        $('#nav_r li').removeClass('now');
-        $(this).addClass('now');
-    })
-    //业务查询页面值、地区交互
-    $('#bot_list p').click(function(){
-        $('#bot_list p').removeClass('bot_choose');
-        $(this).addClass('bot_choose');
-    })
+//导航栏交互
+$('#nav_r li').click(function(){
+    $('#nav_r li').removeClass('now');
+    $(this).addClass('now');
+})
+//业务查询页面值、地区交互
+$('#bot_list p').click(function(){
+    $('#bot_list p').removeClass('bot_choose');
+    $(this).addClass('bot_choose');
+})
 });
+
 //控制表单输入字数
   function isNotMax(oinput){
   if( oinput.value.length >oinput.getAttribute("maxlength")){
@@ -24,6 +25,7 @@ $(document).ready(function() {
   return oinput.value;
   }
   }
+
   //表单获取焦点描边变色
   $(function(){
       $("#search input,select").focus(function(){
@@ -51,6 +53,7 @@ $(document).ready(function() {
           $(this).css("border-color","#32ade6");
       });
   });
+
   //表单背景色
  $(document).ready(function(){ 
 
@@ -70,6 +73,7 @@ $(document).ready(function() {
  $(this).css(even); 
  }); 
  } 
+
  //分页栏
 $(function(){
 $('.M-box3').pagination({
@@ -82,16 +86,16 @@ $('.M-box3').pagination({
     nextContent:'下页'
 });
             });
+
 //获取验证码后计时
 var InterValObj; //timer变量，控制时间
 var count = 120; //间隔函数，1秒执行
 var curCount;//当前剩余秒数
-
 function sendMessage() {
   　curCount = count;
 　　//设置button效果，开始计时
      $("#out").attr("disabled", "true");
-     $("#out").val("请在" + curCount + "秒内输入验证码");
+     $("#out").val( curCount + "后重新发送");
      InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
 　　  //向后台发送处理数据
      $.ajax({
@@ -113,6 +117,6 @@ function SetRemainTime() {
             }
             else {
                 curCount--;
-                $("#out").val("请在" + curCount + "秒内输入验证码");
+                $("#out").val(curCount + "后重新发送");
             }
         }
